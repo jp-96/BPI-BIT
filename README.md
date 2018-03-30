@@ -1,4 +1,9 @@
+![logo](/pic/logo.jpg)
+
 # BPI:bit
+
+> - [官方英文论坛](http://forum.banana-pi.org/c/BPI-Iot-module/BPI-Webduino)
+> - [官方中文论坛](https://forum.banana-pi.org.cn/c/bpi-webduino)
 
 ![](https://forum.banana-pi.org.cn/uploads/default/original/2X/7/701a545ab3d423851845b746f7cc4c588c36a561.JPG)
 
