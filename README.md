@@ -1,8 +1,8 @@
-# BPI:bit Webduino
+# BPI:bit
 
 ![](https://forum.banana-pi.org.cn/uploads/default/original/2X/7/701a545ab3d423851845b746f7cc4c588c36a561.JPG)
 
-本产品采用ESP32作为核心进行设计。
+本产品采用ESP-WROOM-32作为核心进行设计，支持蓝牙、BLE等多种通信方式。BPI:bit将完全兼容Micro：bit。
 
 > ESP-WROOM-32
 > 448KB ROM
@@ -53,7 +53,7 @@
 
 ## LED编号
 
-BPI:BIT 板按照5*5排列方式焊接了25颗(编号0~24)1600万色全彩LED(WS2812),所有的LED的控制仅使用一个引脚(GPIO4)即可完成全部控制，同时BPI:BIT板还预留LED电源控制引脚(GPIO2)，使用时需先拉高GPIO2，然后通过GPIO4输出LED控制信号。
+BPI:bit 板按照5*5排列方式焊接了25颗(编号0~24)1600万色全彩LED(WS2812),所有的LED的控制仅使用一个引脚(GPIO4)即可完成全部控制，同时BPI:BIT板还预留LED电源控制引脚(GPIO2)，使用时需先拉高GPIO2，然后通过GPIO4输出LED控制信号。
 
 LED序号排布方式如下(5*5)：
 
