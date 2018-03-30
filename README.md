@@ -19,6 +19,8 @@
 
 3. [`Test_Code`](/Test_Code)存放BPI：bit板基础function测试代码
 
+4. [`programing`](/programing)存放BPI：bit板各种烧录方式的介绍
+
 ## 引脚定义
 
 <table>
@@ -64,6 +66,11 @@ LED序号排布方式如下(5*5)：
   <tr>  <td>23</td>  <td>18</td>  <td>13</td>  <td>8</td>  <td>3</td>  </tr>
   <tr>  <td>24</td>  <td>19</td>  <td>14</td>  <td>9</td>  <td>4</td>  </tr>
 </table>
+
+## 接口图
+
+![Interface EN](/pic/Interface_EN.JPG)
+![Interface EN](/pic/Interface_zh_CN.JPG)
 
 ## 丝印图
 
