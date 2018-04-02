@@ -65,18 +65,21 @@ void setup()
     pinMode(BottomB, INPUT);
     digitalWrite(ledPower, HIGH);
 
-    // strip.SetPixelColor(0, blue);
-    // strip.SetPixelColor(4, blue);
-    // strip.SetPixelColor(20, blue);
-    // strip.SetPixelColor(24, blue);
-
-    // strip.SetPixelColor(6, green);
-    // strip.SetPixelColor(8, green);
-    // strip.SetPixelColor(16, green);
-    // strip.SetPixelColor(18, green);
-
-    // strip.SetPixelColor(12, red);
+    // strip.SetPixelColor(10, blue);
+    // strip.SetPixelColor(11, blue);
+    // strip.SetPixelColor(12, blue);
+    // strip.SetPixelColor(13, blue);
+    // strip.SetPixelColor(14, red);
     // strip.Show();
+
+    // delay(1000);
+
+    // int i;
+    // for (i = 0; i <= PixelCount - 1; i++)
+    // {
+    //     strip.SetPixelColor(i, black);
+    //     strip.Show();
+    // }
 }
 
 void loop()
@@ -94,9 +97,9 @@ void loop()
             {
                 
                 
-                strip.SetPixelColor(16, red);
-                strip.SetPixelColor(7, green);
-                strip.SetPixelColor(18, blue);
+                strip.SetPixelColor(16, num1);
+                strip.SetPixelColor( 7, num2);
+                strip.SetPixelColor(18, num3);
                 strip.Show();
             }
             else
