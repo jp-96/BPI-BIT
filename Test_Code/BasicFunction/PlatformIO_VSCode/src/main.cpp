@@ -1,59 +1,68 @@
-//BIT NEW
-//BPI - BIT test code
+/* BPI:bit Basic Function Test Code*/
 #include <Arduino.h>
 #include <NeoPixelBus.h>
 #include "WiFi.h"
 
-#define LEDC_CHANNEL_0 0
-#define LEDC_TIMER_13_BIT 13
-#define LEDC_BASE_FREQ 4500
-
-const char *ssid = "SSID";
-const char *password = "PASSWD";
-
-const uint16_t PixelCount = 25;
-const uint8_t PixelPin = 4;
-
-#define colorSaturation 64
+//global config
 #define delay_ms 500
-
 #define bout 3
-
-NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod> strip(PixelCount, PixelPin);
-
-RgbColor red(colorSaturation, 0, 0);
-RgbColor green(0, colorSaturation, 0);
-RgbColor blue(0, 0, colorSaturation);
-RgbColor white(colorSaturation);
-RgbColor black(0);
-
-HslColor hslRed(red);
-HslColor hslGreen(green);
-HslColor hslBlue(blue);
-HslColor hslWhite(white);
-HslColor hslBlack(black);
-
-#define LUM0 36 //ADC1_CH0
-#define LUM1 39 //ADC1_CH3
-#define Temp 34 //ADC2_CH7
-#define Buzzer 25
-
-#define ledPower 2
-#define BottomA 35
-#define BottomB 27
-
-int LUM_Value0 = 0;
-int LUM_Value1 = 0;
-int Temp_value = 0;
 
 int adTestFreq = 0;
 int wifiTestFreq = 0;
 int ledTestFreq = 0;
 int BuzzerTestFreq = 0;
 
+//Wi-Fi config
+const char *ssid = "SSID";
+const char *password = "PASSWORD";
+
+//WS2812 config
+const uint16_t PixelCount = 25;
+const uint8_t PixelPin = 4;
+NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod> strip(PixelCount, PixelPin);
+
+#define colorSaturation 64
+#define ledPower 2
+
+RgbColor red(colorSaturation, 0, 0);
+RgbColor green(0, colorSaturation, 0);
+RgbColor blue(0, 0, colorSaturation);
+RgbColor white(colorSaturation);
+RgbColor black(0);
+HslColor hslRed(red);
+HslColor hslGreen(green);
+HslColor hslBlue(blue);
+HslColor hslWhite(white);
+HslColor hslBlack(black);
+
+//ADC config
+#define LUM0 36 //ADC1_CH0
+#define LUM1 39 //ADC1_CH3
+#define Temp 34 //ADC2_CH7
+
+int LUM_Value0 = 0;
+int LUM_Value1 = 0;
+int Temp_value = 0;
+
+//buzzer config
+#define Buzzer 25
+
 int brightness = 0;
 int fadeAmount = 5;
 
+#define LEDC_CHANNEL_0 0
+#define LEDC_TIMER_13_BIT 13
+#define LEDC_BASE_FREQ 450
+
+//buttom config
+#define BottomA 35
+#define BottomB 27
+
+/******************************************
+**Function name    : ledcAnalogWrite     **
+**Input parameters : LEDC_Channel/Value  **
+**Output parameters: None                **
+******************************************/
 void ledcAnalogWrite(uint8_t channel, uint32_t value)
 {
     // calculate duty, 8191 from 2 ^ 13 - 1 (2 ^ LEDC_TIMER_13_BIT - 1)
@@ -70,7 +79,11 @@ void setup()
         ; // wait for serial attach
 
     Serial.println();
-    Serial.println("Initializing...");
+    Serial.println("...........................");
+    Serial.println("...........................");
+    Serial.println("..   BPI:bit  on power   ..");
+    Serial.println("...........................");
+    Serial.println("...........................");
     Serial.flush();
 
     // this resets all the neopixels to an off state
@@ -90,17 +103,17 @@ void setup()
 
 void loop()
 {
-    /**************************************************************
-	 **************************************************************
-	 ***Board:BPI-Webduino:BIT                                  ***
-	 ***Function:LED(WS2812) Test                               ***
-	 **************************************************************
-	 *************************************************************/
+    /*********************************
+	 *********************************
+	 ***Board:BPI-Webduino:BIT     ***
+	 ***Function:LED(WS2812) Test  ***
+	 *********************************
+	 ********************************/
     Serial.println();
     Serial.println("LED test!!!");
     Serial.println();
 
-    digitalWrite(ledPower,HIGH);
+    digitalWrite(ledPower,HIGH);//Open WS2812 Power
 
     for (ledTestFreq = 0; ledTestFreq < bout; ledTestFreq++)
     {
@@ -148,16 +161,16 @@ void loop()
         Serial.println();
     }
 
-    digitalWrite(ledPower, LOW);
+    digitalWrite(ledPower, LOW);//Close WS2812 Power
 
     Serial.println("--Over--");
 
-    /**************************************************************
-	 **************************************************************
-	 ***Board:BPI-Webduino:BIT                                  ***
-	 ***Function:ADC Test                                       ***
-	 **************************************************************
-	 *************************************************************/
+    /*****************************
+	 *****************************
+	 ***Board:BPI-Webduino:BIT ***
+	 ***Function:ADC Test      ***
+	 *****************************
+	 ****************************/
     Serial.println();
     Serial.println("ADC test!!!");
     Serial.println();
@@ -186,18 +199,18 @@ void loop()
         Serial.print(Temp_value);
         Serial.println();
 
-        delay(delay_ms);
+        delay(1500);
         Serial.println();
     }
 
     Serial.println("--Over--");
 
-    /**************************************************************
-	 **************************************************************
-	 ***Board:BPI-Webduino:BIT                                  ***
-	 ***Function:Wi-Fi Test                                     ***
-	 **************************************************************
-	 *************************************************************/
+    /*****************************
+	 *****************************
+	 ***Board:BPI-Webduino:BIT ***
+	 ***Function:Wi-Fi Test    ***
+	 *****************************
+	 ****************************/
     Serial.println();
     Serial.println("Wi-Fi test!!!");
     Serial.println();
@@ -254,12 +267,12 @@ void loop()
 
     Serial.println("--Over--");
 
-    /**************************************************************
-	 **************************************************************
-	 ***Board:BPI-Webduino:BIT                                  ***
-	 ***Function:Buzzer Test                                    ***
-	 **************************************************************
-	 *************************************************************/
+    /*****************************
+	 *****************************
+	 ***Board:BPI-Webduino:BIT ***
+	 ***Function:Buzzer Test   ***
+	 *****************************
+	 ****************************/
     Serial.println();
     Serial.println("Buzzer Test!!!");
     Serial.println();
@@ -289,6 +302,9 @@ void loop()
         ledcAnalogWrite(LEDC_CHANNEL_0, 0);
     }
     Serial.println("--Over--");
-    
+    Serial.println("");
     Serial.println("---------Test Over !!!---------");
+    Serial.println("");
+    Serial.println("");
+    Serial.println("");
 }
