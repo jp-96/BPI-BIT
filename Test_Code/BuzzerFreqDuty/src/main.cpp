@@ -4,7 +4,7 @@
 #define LEDC_CHANNEL_0 0
 #define LEDC_TIMER_13_BIT 13
 #define Buzzer 25
-#define brightness 128
+#define brightness 20
 int BuzzerTestFreq = 0;
 int LEDC_BASE_FREQ = 200;
 
