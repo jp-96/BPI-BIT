@@ -21,7 +21,7 @@ const uint16_t PixelCount = 25;
 const uint8_t PixelPin = 4;
 NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod> strip(PixelCount, PixelPin);
 
-#define colorSaturation 64
+#define colorSaturation 32
 #define ledPower 2
 
 RgbColor red(colorSaturation, 0, 0);
