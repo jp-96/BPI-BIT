@@ -1,36 +1,36 @@
-![logo](/pic/logo.jpg)
+![logo](/pic/logo.jpg)                                     
 
 # BPI:bit
 
-[Chinese] | [[English]](/README_EN.md)
+[English] | [[Chinese]](/README.md)
 
-> - [官方英文论坛](http://forum.banana-pi.org/c/bpi-webduino/BPI-Webduino)
-> - [官方中文论坛](https://forum.banana-pi.org.cn/c/bpi-webduino)
-> - [Webduino中国大陆](https://webduino.com.cn/site/)
+> - [Official English Forum](http://forum.banana-pi.org/c/bpi-webduino/BPI-Webduino)
+> - [Official Chinese Forum](https://forum.banana-pi.org.cn/c/bpi-webduino)
+> - [Webduino China Mainland](https://webduino.com.cn/site/)
 > - [webduino](https://webduino.io/)
 
 ![](https://forum.banana-pi.org.cn/uploads/default/original/2X/7/701a545ab3d423851845b746f7cc4c588c36a561.JPG)
 
-本产品采用ESP-WROOM-32作为核心进行设计，支持蓝牙、BLE等多种通信方式。BPI:bit将完全兼容Micro：bit。
+This product uses ESP-WROOM-32 as the core design, supports Bluetooth, BLE and other communication methods. BPI:bit will be fully compatible with Micro:bit.
 
 > ESP-WROOM-32
 > 448KB ROM
 > 520KB RAM
 > Wi-Fi&BLE
 
-正面具有25颗（5*5）可编程LED灯，单GPIO控制，单颗16777216色显示；并且正面还具有2个用户可编程按键。
+The front has 25 (5*5) programmable LED lights, single GPIO control, 16777216 color display; and there are 2 user-programmable keys on the front.
 
-## 目录导读
+## Catalog reading
 
-1. [`doc`](/doc)存放BPI:bit板的原理图以及ESP-WROOM-32、WS2812、MPU9250等各个部分的datesheet
+1. [`doc`](/doc)There are the schematic of the BPI:bit board and the datesheets for each part of the ESP-WROOM-32, WS2812, MPU9250, etc.
 
-2. [`pic`](/pic)存放BPI:bit板的照片与各种示意图
+2. [`pic`](/pic)There are the photos and sketches of BPI:bit board
 
-3. [`Test_Code`](/Test_Code)存放BPI:bit板基础function测试代码
+3. [`Test_Code`](/Test_Code)There are the BPI:bit board function test code
 
-4. [`programing`](/programing)存放BPI:bit板各种烧录方式的介绍
+4. [`programing`](/programing)There are introduction of various burning methods of BPI:bit board
 
-## 引脚定义
+## Pin Define
 
 <table>
   <tr><td>Pin Name</td><td>Analog Function1</td><td>Analog Function2</td><td>Function1</td><td>Function2</td><td>Power</td></tr>
@@ -62,11 +62,11 @@
 </table>
 
 
-## LED编号
+## LED Number
 
-BPI:bit 板按照5*5排列方式焊接了25颗(编号0~24)1600万色全彩LED(WS2812),所有的LED的控制仅使用一个引脚(GPIO4)即可完成全部控制，同时BPI:bit板还预留LED电源控制引脚(GPIO2)，可以通过拉低GPIO2的点位来关闭全部LED的电源。
+The BPI:bit board is soldered with 25 (numbered 0-24) 16 million-color full-color LEDs (WS2812) according to a 5*5 arrangement. All LED controls use only one pin (GPIO4) to complete all control.At the same time, the BPI:bit board also reserves the LED power control pin (GPIO2), which can turn off the power of all the LEDs by pulling down the GPIO2 point.
 
-LED序号排布方式如下(5*5)：
+LED sort(5*5)：
 
 <table>
   <tr>  <td>20</td>  <td>15</td>  <td>10</td>  <td>5</td>  <td>0</td>  </tr>
@@ -76,11 +76,11 @@ LED序号排布方式如下(5*5)：
   <tr>  <td>24</td>  <td>19</td>  <td>14</td>  <td>9</td>  <td>4</td>  </tr>
 </table>
 
-## 接口图
+## Interface
 
-![Interface zh_CN](/pic/Interface_zh_CN.JPG)
+![Interface EN](/pic/Interface_EN.JPG)
 
-## 丝印图
+## Silkscreen
 
 ![](/pic/top.png)
 
