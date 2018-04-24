@@ -28,7 +28,9 @@
 
 3. [`Test_Code`](/Test_Code)存放BPI:bit板基础function测试代码
 
-4. [`programing`](/programing)存放BPI:bit板各种烧录方式的介绍
+4. [`programming`](/programing)存放BPI:bit板各种烧录方式的介绍
+
+5. [`Webduino_bin`](/Webduino_bin)存放BPI:bit板适配的Webduino固件
 
 ## 引脚定义
 

@@ -28,7 +28,9 @@ The front has 25 (5*5) programmable LED lights, single GPIO control, 16777216 co
 
 3. [`Test_Code`](/Test_Code)There are the BPI:bit board function test code
 
-4. [`programing`](/programing)There are introduction of various burning methods of BPI:bit board
+4. [`programming`](/programing)There are introduction of various burning methods of BPI:bit board
+
+5. [`Webduino_bin`](/Webduino_bin)BPI:bit Board adapted Webduino firmware
 
 ## Pin Define
 
