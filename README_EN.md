@@ -32,6 +32,8 @@ The front has 25 (5*5) programmable LED lights, single GPIO control, 16777216 co
 
 5. [`Webduino_bin`](/Webduino_bin)BPI:bit Board adapted Webduino firmware
 
+6. [`Test_bin`](/Webduino_bin)BPI:bit Board Basic function test firmware
+
 ## Pin Define
 
 <table>

@@ -32,6 +32,8 @@
 
 5. [`Webduino_bin`](/Webduino_bin)存放BPI:bit板适配的Webduino固件
 
+6. [`Test_bin`](/Webduino_bin)存放BPI:bit板基础功能测试固件
+
 ## 引脚定义
 
 <table>
