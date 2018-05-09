@@ -22,17 +22,15 @@ The front has 25 (5*5) programmable LED lights, single GPIO control, 16777216 co
 
 ## Catalog reading
 
-1. [`doc`](/doc)There are the schematic of the BPI:bit board and the datesheets for each part of the ESP-WROOM-32, WS2812, MPU9250, etc.
+1. [`Doc`](/Doc)There are the schematic of the BPI:bit board and the datesheets for each part of the ESP-WROOM-32, WS2812, MPU9250, etc.
 
-2. [`pic`](/pic)There are the photos and sketches of BPI:bit board
+2. [`Pic`](/Pic)There are the photos and sketches of BPI:bit board
 
-3. [`Test_Code`](/Test_Code)There are the BPI:bit board function test code
+3. [`Code`](/Code)There are the BPI:bit board function test code
 
-4. [`programming`](/programing)There are introduction of various burning methods of BPI:bit board
+4. [`Programming`](/Programing)There are introduction of various burning methods of BPI:bit board
 
-5. [`Webduino_bin`](/Webduino_bin)BPI:bit Board adapted Webduino firmware
-
-6. [`Test_bin`](/Webduino_bin)BPI:bit Board Basic function test firmware
+5. [`bin`](/bin)BPI:bit Board adapted Webduino\MicroPython\UnitTest\Other firmware
 
 ## Pin Define
 
