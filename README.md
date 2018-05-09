@@ -22,13 +22,13 @@
 
 ## 目录导读
 
-1. [`Doc`](/Doc)存放BPI:bit板的原理图以及ESP-WROOM-32、WS2812、MPU9250等各个部分的datesheet
+1. [`doc`](/doc)存放BPI:bit板的原理图以及ESP-WROOM-32、WS2812、MPU9250等各个部分的datesheet
 
-2. [`Pic`](/Pic)存放BPI:bit板的照片与各种示意图
+2. [`pic`](/pic)存放BPI:bit板的照片与各种示意图
 
 3. [`Code`](/Code)存放BPI:bit板基础function测试代码
 
-4. [`Programming`](/Programming)存放BPI:bit板各种烧录方式的介绍
+4. [`programming`](/programming)存放BPI:bit板各种烧录方式的介绍
 
 5. [`bin`](/bin)存放BPI:bit板适配的基础功能测试、Webduino、Microython可烧写的固件
 
