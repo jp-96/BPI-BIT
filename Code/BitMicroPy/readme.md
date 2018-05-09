@@ -58,11 +58,11 @@
 
     如下图：
 
-    ​	![EspTouchConfig](ReadMe\EspTouchConfig.png)
+    ​	![EspTouchConfig](\ReadMe\EspTouchConfig.png)
 
  3. 点击唯一的按钮，稍等一会将会出现下图结果，如果没有就重试。
 
-    ![EspTouchResult](ReadMe\EspTouchResult.png)
+    ![EspTouchResult](.\ReadMe\EspTouchResult.png)
 
  4. 这样就可以知道BpiBit已经连接上WIFI了，并且其IP地址为192.168.1.40，这个值将会提供给访问WebDav空间。
 
