@@ -12,8 +12,6 @@
 
 ​	此外移除了串口Python命令行交互，取而代之的是通过WebDav的方式访问或编辑Python代码，WebDav相关工具也已在Tools目录下提供。
 
-
-
 ### 2. 功能介绍
 
 ​	当Mpy固件烧写以后，针对BpiBit板子提供了上电时按住A键（35）或B键（34）将启动如下两个特殊模式。
@@ -22,19 +20,13 @@
 
 ​	如果是第一次启动，默认上电就会进入该模式，因为没有WIFI配置文件，在该模式下需通过EspTouch软件进行配网，即可连接BpiBit模块，Android版本程序的软件已在Tools目录下提供。
 
-
-
 - #### SafeMode（B键）
 
 ​	当python程序的SYSTEM.PY写了死循环后就无法执行WebDav的服务了，所以避免意外情况，允许用户通过按住B键保持WebDav服务的运行直至松开。
 
-
-
 ### 3. 编程环境介绍
 
 ​	接下来介绍一下编写Py代码的标准环境以及Bpibit的Python运行环境。
-
-
 
 #### 标准编程环境
 
@@ -42,15 +34,13 @@
 
 ​	SYSTEM.PY文件默认内容为空，而BOOT.PY会有一行注释 `# This file is executed on every boot (including wake-boot from deepsleep)`表示该文件会在上电时执行一次。
 
-
-
 #### 如何通过SmartConfig获得BpiBit的IP地址？
 
  1. 启动按住B键即可进入SmartConfig（或第一次启动）
 
     串口将输出如下信息在最底部：
 
-    ​	![1525861144961](https://github.com/yelvlab/BPI-BIT/tree/master/Code/BitMicroPy/ReadMe/SmartConfig.png)
+    ​	![SmartConfig](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/SmartConfig.png)
 
  2. 此处以Android的EspTouch软件为例
 
@@ -58,11 +48,11 @@
 
     如下图：
 
-    ​	![EspTouchConfig](https://github.com/yelvlab/BPI-BIT/tree/master/Code/BitMicroPy/ReadMe/ReadMe/EspTouchConfig.png)
+    ​![EspTouchConfig](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchConfig.png)
 
  3. 点击唯一的按钮，稍等一会将会出现下图结果，如果没有就重试。
 
-    ![EspTouchResult](https://github.com/yelvlab/BPI-BIT/tree/master/Code/BitMicroPy/ReadMe/ReadMe/EspTouchResult.png)
+    ![EspTouchResult](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchResult.png)
 
  4. 这样就可以知道BpiBit已经连接上WIFI了，并且其IP地址为192.168.1.40，这个值将会提供给访问WebDav空间。
 
@@ -70,7 +60,7 @@
 
 ​	假如已经配网(SmartConfig)成功后得知BpiBit所在网络下的IP后，可以直接访问浏览器查看板子根目录下的所有文件，如下截图。
 
-![ListWebDav](https://github.com/yelvlab/BPI-BIT/tree/master/Code/BitMicroPy/ReadMe/ReadMe/ListWebDav.png)
+	![ListWebDav](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/ListWebDav.png)
 
 ​	以下提供推荐的WebDav访问工具与方式。
 
@@ -82,19 +72,19 @@
 
  1. 如图点击New
 
-    ![img](https://github.com/yelvlab/BPI-BIT/tree/master/Code/BitMicroPy/ReadMe/ReadMe/NewWebDavConnect.png)
+    ![NewWebDavConnect](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/NewWebDavConnect.png)
 
 	2. 再按如下图选取WebDAV，BpiBit的WebDav使用HTTP。
 
-    ![1525862301491](https://github.com/yelvlab/BPI-BIT/tree/master/Code/BitMicroPy/ReadMe/ReadMe/SelectWebDAV.png)
+    ![SelectWebDAV](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/SelectWebDAV.png)
 
  3. 此时输入刚才获得的IP地址，例如：192.168.1.40。
 
-    ![1525862543546](https://github.com/yelvlab/BPI-BIT/tree/master/Code/BitMicroPy/ReadMe/ReadMe/ConnectWebDav.png)
+    ![ConnectWebDav](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/ConnectWebDav.png)
 
  4. 此时即可建立完成，如图，默认即可，建议关闭访问时连接或验证的选项，也就是默认选项，此时软件已经添加了该项，双击打开即可以得到BpiBit的文件目录。
 
-    ![1525862738398](https://github.com/yelvlab/BPI-BIT/tree/master/Code/BitMicroPy/ReadMe/ReadMe/FinlishWebDav.png)
+    ![FinlishWebDav](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/FinlishWebDav.png)
 
  5. 其他WebDav工具也如上流程所示。
 
@@ -109,12 +99,9 @@ print("hello bpibit!")
 ```
 
 ​	则串口将会反复输出以下信息。
-
-![HelloBpibit](https://github.com/yelvlab/BPI-BIT/tree/master/Code/BitMicroPy/ReadMe/ReadMe/HelloBpibit.png)
+(https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchConfig.png)
 
 ​	这就是运行Python的第一步。
-
-
 
 #### 更好用的编程环境
 
