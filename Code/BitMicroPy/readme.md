@@ -18,11 +18,11 @@
 
 - #### SmartConfig（A键）
 
-		如果是第一次启动，默认上电就会进入该模式，因为没有WIFI配置文件，在该模式下需通过EspTouch软件进行配网，即可连接BpiBit模块，Android版本程序的软件已在Tools目录下提供。
+	如果是第一次启动，默认上电就会进入该模式，因为没有WIFI配置文件，在该模式下需通过EspTouch软件进行配网，即可连接BpiBit模块，Android版本程序的软件已在Tools目录下提供。
 
 - #### SafeMode（B键）
 
-		当python程序的SYSTEM.PY写了死循环后就无法执行WebDav的服务了，所以避免意外情况，允许用户通过按住B键保持WebDav服务的运行直至松开。
+	当python程序的SYSTEM.PY写了死循环后就无法执行WebDav的服务了，所以避免意外情况，允许用户通过按住B键保持WebDav服务的运行直至松开。
 
 ### 3. 编程环境介绍
 
@@ -100,7 +100,7 @@ print("hello bpibit!")
 
 ​	则串口将会反复输出以下信息。
 
-- ![EspTouchConfig](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchConfig.png)
+- ![HelloBpibit](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/HelloBpibit.png)
 
 ​	这就是运行Python的第一步。
 
