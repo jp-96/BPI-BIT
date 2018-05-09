@@ -60,7 +60,7 @@
 
 ​	假如已经配网(SmartConfig)成功后得知BpiBit所在网络下的IP后，可以直接访问浏览器查看板子根目录下的所有文件，如下截图。
 
-	![ListWebDav](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/ListWebDav.png)
+    ![ListWebDav](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/ListWebDav.png)
 
 ​	以下提供推荐的WebDav访问工具与方式。
 
@@ -74,7 +74,7 @@
 
     ![NewWebDavConnect](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/NewWebDavConnect.png)
 
-	2. 再按如下图选取WebDAV，BpiBit的WebDav使用HTTP。
+ 2. 再按如下图选取WebDAV，BpiBit的WebDav使用HTTP。
 
     ![SelectWebDAV](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/SelectWebDAV.png)
 
@@ -99,7 +99,7 @@ print("hello bpibit!")
 ```
 
 ​	则串口将会反复输出以下信息。
-(https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchConfig.png)
+    ![EspTouchConfig](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchConfig.png)
 
 ​	这就是运行Python的第一步。
 
