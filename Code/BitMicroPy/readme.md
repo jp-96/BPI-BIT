@@ -18,11 +18,11 @@
 
 - #### SmartConfig（A键）
 
-​	如果是第一次启动，默认上电就会进入该模式，因为没有WIFI配置文件，在该模式下需通过EspTouch软件进行配网，即可连接BpiBit模块，Android版本程序的软件已在Tools目录下提供。
+		如果是第一次启动，默认上电就会进入该模式，因为没有WIFI配置文件，在该模式下需通过EspTouch软件进行配网，即可连接BpiBit模块，Android版本程序的软件已在Tools目录下提供。
 
 - #### SafeMode（B键）
 
-​	当python程序的SYSTEM.PY写了死循环后就无法执行WebDav的服务了，所以避免意外情况，允许用户通过按住B键保持WebDav服务的运行直至松开。
+		当python程序的SYSTEM.PY写了死循环后就无法执行WebDav的服务了，所以避免意外情况，允许用户通过按住B键保持WebDav服务的运行直至松开。
 
 ### 3. 编程环境介绍
 
@@ -40,7 +40,7 @@
 
     串口将输出如下信息在最底部：
 
-    ​	![SmartConfig](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/SmartConfig.png)
+    - ​	![SmartConfig](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/SmartConfig.png)
 
  2. 此处以Android的EspTouch软件为例
 
@@ -48,11 +48,11 @@
 
     如下图：
 
-    ​![EspTouchConfig](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchConfig.png)
+    - ![EspTouchConfig](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchConfig.png)
 
  3. 点击唯一的按钮，稍等一会将会出现下图结果，如果没有就重试。
 
-    ![EspTouchResult](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchResult.png)
+    - ![EspTouchResult](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchResult.png)
 
  4. 这样就可以知道BpiBit已经连接上WIFI了，并且其IP地址为192.168.1.40，这个值将会提供给访问WebDav空间。
 
@@ -60,7 +60,7 @@
 
 ​	假如已经配网(SmartConfig)成功后得知BpiBit所在网络下的IP后，可以直接访问浏览器查看板子根目录下的所有文件，如下截图。
 
-    ![ListWebDav](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/ListWebDav.png)
+- ![ListWebDav](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/ListWebDav.png)
 
 ​	以下提供推荐的WebDav访问工具与方式。
 
@@ -72,19 +72,19 @@
 
  1. 如图点击New
 
-    ![NewWebDavConnect](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/NewWebDavConnect.png)
+    - ![NewWebDavConnect](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/NewWebDavConnect.png)
 
  2. 再按如下图选取WebDAV，BpiBit的WebDav使用HTTP。
 
-    ![SelectWebDAV](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/SelectWebDAV.png)
+    - ![SelectWebDAV](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/SelectWebDAV.png)
 
  3. 此时输入刚才获得的IP地址，例如：192.168.1.40。
 
-    ![ConnectWebDav](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/ConnectWebDav.png)
+    - ![ConnectWebDav](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/ConnectWebDav.png)
 
  4. 此时即可建立完成，如图，默认即可，建议关闭访问时连接或验证的选项，也就是默认选项，此时软件已经添加了该项，双击打开即可以得到BpiBit的文件目录。
 
-    ![FinlishWebDav](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/FinlishWebDav.png)
+    - ![FinlishWebDav](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/FinlishWebDav.png)
 
  5. 其他WebDav工具也如上流程所示。
 
@@ -99,7 +99,8 @@ print("hello bpibit!")
 ```
 
 ​	则串口将会反复输出以下信息。
-    ![EspTouchConfig](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchConfig.png)
+
+- ![EspTouchConfig](https://github.com/yelvlab/BPI-BIT/raw/master/Code/BitMicroPy/ReadMe/EspTouchConfig.png)
 
 ​	这就是运行Python的第一步。
 
@@ -111,17 +112,17 @@ print("hello bpibit!")
 
 - #### 生产环境
 
-​	在生产环境下，自己编写的Py代码不会被系统的其他服务打断，也就是在标准编程环境中将SYSTEM.PY写死循环即可，同时WebDav服务将不会被执行，也就无法在Python运行时修改Python代码了。
+		在生产环境下，自己编写的Py代码不会被系统的其他服务打断，也就是在标准编程环境中将SYSTEM.PY写死循环即可，同时WebDav服务将不会被执行，也就无法在Python运行时修改Python代码了。
 
 - #### 开发环境
 
-​	在开发环境下，当然是希望编写代码后保存，即时运行程序，最好还可以边写边运行Python程序，以及程序的随时停止和运行，所以提供了本目录下的三个文件，分别为BOOT.PY、SYSTEM.PY、INDEX.PY。
+		在开发环境下，当然是希望编写代码后保存，即时运行程序，最好还可以边写边运行Python程序，以及程序的随时停止和运行，所以提供了本目录下的三个文件，分别为BOOT.PY、SYSTEM.PY、INDEX.PY。
 
-​	BOOT.PY 会提供给系统一个线程检查INDEX.PY的文件大小变动的情况从而执行INDEX.PY代码，所以仅需在INDEX.PY文件里直接写代码运行即可（确保文件大小变动即可）。
-	
-​	注意，当在INDEX.PY中写了死循环后，上文中提及的重载文件时将会启动多个线程，因为目前线程库还没有外部停止接口，所以前一个线程的死循环，会与新线程的死循环交错其中，如果你不希望看到信息混乱输出的话，重启一下就好了。
-	
-​	代码如下：
+		BOOT.PY 会提供给系统一个线程检查INDEX.PY的文件大小变动的情况从而执行INDEX.PY代码，所以仅需在INDEX.PY文件里直接写代码运行即可（确保文件大小变动即可）。
+		
+		注意，当在INDEX.PY中写了死循环后，上文中提及的重载文件时将会启动多个线程，因为目前线程库还没有外部停止接口，所以前一个线程的死循环，会与新线程的死循环交错其中，如果你不希望看到信息混乱输出的话，重启一下就好了。
+		
+		代码如下：
 
 ```python
 import time
