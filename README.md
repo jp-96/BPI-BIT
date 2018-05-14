@@ -30,7 +30,7 @@
 
 4. [`programming`](/programming)存放BPI:bit板各种烧录方式的介绍
 
-5. [`bin`](/bin)存放BPI:bit板适配的基础功能测试、Webduino、Microython可烧写的固件
+5. [`Bin`](/Bin)存放BPI:bit板适配的基础功能测试、Webduino、Microython可烧写的固件
 
 ## 引脚定义
 

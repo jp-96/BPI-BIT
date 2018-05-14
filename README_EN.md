@@ -30,7 +30,7 @@ The front has 25 (5*5) programmable LED lights, single GPIO control, 16777216 co
 
 4. [`programming`](/programing)There are introduction of various burning methods of BPI:bit board
 
-5. [`bin`](/bin)BPI:bit Board adapted Webduino\MicroPython\UnitTest\Other firmware
+5. [`Bin`](/Bin)BPI:bit Board adapted Webduino\MicroPython\UnitTest\Other firmware
 
 ## Pin Define
 
