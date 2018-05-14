@@ -32,7 +32,7 @@
 
 ​	第一次使用固件的时候，BpiBit系统会默认生成两个文件，分别为 BOOT.PY 与 SYSTEM.PY。BOOT.PY仅在上电前运行一次，而SYSTEM.PY将会反复循环运行。
 
-​	SYSTEM.PY文件默认内容为空，而BOOT.PY会有一行注释 `# This file is executed on every boot (including wake-boot from deepsleep)`表示该文件会在上电时执行一次。
+​	SYSTEM.PY文件默认内容为`# This File ill Loop Execute`，而BOOT.PY会有一行注释 `# This file is executed on every boot (including wake-boot from deepsleep)`表示该文件会在上电时执行一次。
 
 #### 如何通过SmartConfig获得BpiBit的IP地址？
 
@@ -122,7 +122,7 @@ print("hello bpibit!")
 		
 	注意，当在INDEX.PY中写了死循环后，上文中提及的重载文件时将会启动多个线程，因为目前线程库还没有外部停止接口，所以前一个线程的死循环，会与新线程的死循环交错其中，如果你不希望看到信息混乱输出的话，重启一下就好了。
 		
-		代码如下：
+	代码如下：
 
 ```python
 import time
