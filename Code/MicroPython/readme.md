@@ -126,6 +126,7 @@ print("hello bpibit!")
 
 ```python
 import time
+import _thread
 import sys
 import uos
 
