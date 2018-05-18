@@ -219,7 +219,7 @@ while True:
    - 如何控制开关当生物靠近时
 3. 官方文档资料
    1. [USE MICROPYTHON ONLINE](http://www.micropython.org/unicorn)
-   2. [MicroPython](http://docs.micropython.org/en/latest)
+   2. [MicroPython](http://docs.micropython.org/en/latest/esp8266/)
    3. [StudyPython](http://www.runoob.com/python/python-intro.html)
 
 #### Q & A
