@@ -206,7 +206,6 @@ while True:
    - 如何用Python爬取网络数据
    - 如何用Python自动登陆网站
 2. 硬件相关应用
-<<<<<<< HEAD
    - 播放音乐和变化呼吸灯代码[Juwan的BpiBit自用](https://github.com/yelvlab/BPI-BIT/tree/master/Code/MicroPython/JuwanBit)
    - 如何使得两灯交错闪缩
    - 如何使用超声波测距
