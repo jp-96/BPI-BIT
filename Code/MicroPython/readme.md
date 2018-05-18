@@ -210,11 +210,6 @@ while True:
    - 播放音乐和变化呼吸灯代码[Juwan的BpiBit自用](https://github.com/yelvlab/BPI-BIT/tree/master/Code/MicroPython/JuwanBit)
    - 如何使得两灯交错闪缩
    - 如何使用超声波测距
-=======
-   - 播放音乐和变化呼吸灯代码[Juwan的BpiBit自用](https://github.com/yelvlab/BPI-BIT/tree/master/Code/MicroPython/JuwanBit)
-   - 如何使得两灯交错闪烁
-   - 如何使用超声波测距
->>>>>>> 464c44991800c8ca6ebcc9924670c0ef2e02b2f7
    - 如何获取外界温度
    - 如何控制开关当生物靠近时
 3. 官方文档资料
