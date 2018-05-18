@@ -16,11 +16,11 @@
 
 ​	当Mpy固件烧写以后，针对BpiBit板子提供了上电时按住A键（35）或B键（34）将启动如下两个特殊模式。
 
-- #### SmartConfig（A键）
+- #### SmartConfig（B键）
 
 	如果是第一次启动，默认上电就会进入该模式，因为没有WIFI配置文件，在该模式下需通过EspTouch软件进行配网，即可连接BpiBit模块，Android版本程序的软件已在Tools目录下提供。
 
-- #### SafeMode（B键）
+- #### SafeMode（A键）
 
 	当python程序的SYSTEM.PY写了死循环后就无法执行WebDav的服务了，所以避免意外情况，允许用户通过按住B键保持WebDav服务的运行直至松开。
 
