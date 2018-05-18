@@ -45,7 +45,7 @@ Adafruit_PCD8544 display = Adafruit_PCD8544(9, 8, 7, 5, 6);
 
 // Pin definitions
 int intPin = 12; // These can be changed, 2 and 3 are the Arduinos ext int pins
-int myLed = 13;  // Set up pin 13 led for toggling
+int BpibitLed = 18;  // Set up pin 18 led for toggling
 
 MPU9250 myIMU;
 
@@ -57,8 +57,14 @@ void setup()
   // Set up the interrupt pin, its set as active high, push-pull
   pinMode(intPin, INPUT);
   digitalWrite(intPin, LOW);
-  pinMode(myLed, OUTPUT);
-  digitalWrite(myLed, HIGH);
+  pinMode(BpibitLed, OUTPUT);
+  digitalWrite(BpibitLed, HIGH);
+
+#if ADO // It doesn't have to be a problem. but suggest to do so. 
+  const int IO0 = 0;  // Set up pin 0 led for  MPU9250 Address(ADO) In DataSheet 
+  pinMode(IO0, OUTPUT);
+  digitalWrite(IO0, HIGH);
+#endif
 
 #ifdef LCD
   display.begin();         // Ini8ialize the display
@@ -85,16 +91,22 @@ void setup()
   display.clearDisplay();      // clears the screen and buffer
 #endif                         // LCD
 
-  Wire.begin(21, 22, 100000), delay(500);
+  Wire.begin(21, 22, 40000L);
   
-  // Read the WHO_AM_I register, this is a good test of communication
-  byte c = myIMU.readByte(MPU9250_ADDRESS, WHO_AM_I_MPU9250);
+  byte c = 0;
 
-  Serial.print("MPU9250 ");
-  Serial.print("I AM ");
-  Serial.print(c, HEX);
-  Serial.print(" I should be ");
-  Serial.println(0x71, HEX);
+  do
+  {
+    Wire.reset(); // Because I2C read will fail about busyinit so Reset.
+    // Read the WHO_AM_I register, this is a good test of communication
+    c = myIMU.readByte(MPU9250_ADDRESS, WHO_AM_I_MPU9250);
+
+    Serial.print("MPU9250 ");
+    Serial.print("I AM ");
+    Serial.print(c, HEX);
+    Serial.print(" I should be ");
+    Serial.println(0x71, HEX);
+  }while(0x71 != c);
 
 #ifdef LCD
   display.setCursor(20, 0);
@@ -397,7 +409,7 @@ void loop()
 #endif // LCD
 
       myIMU.count = millis();
-      digitalWrite(myLed, !digitalRead(myLed)); // toggle led
+      digitalWrite(BpibitLed, !digitalRead(BpibitLed)); // toggle led
     }                                           // if (myIMU.delt_t > 500)
   }                                             // if (!AHRS)
   else
