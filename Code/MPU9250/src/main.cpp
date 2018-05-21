@@ -91,7 +91,7 @@ void setup()
   display.clearDisplay();      // clears the screen and buffer
 #endif                         // LCD
 
-  Wire.begin(21, 22, 40000L);
+  Wire.begin(21, 22, 400000L);
   
   byte c = 0;
 
