@@ -20,6 +20,10 @@
 
 正面具有25颗（5*5）可编程LED灯，单GPIO控制，单颗16777216色显示；并且正面还具有2个用户可编程按键。
 
+## BPI:Bit Webduino 超快速上手指南
+
+[BPI-Bit-Webduino超快速上手指南](/doc/BPI-Bit-Webduino超快速上手指南/BPI-Bit-Webduino超快速上手指南.md)     ----[{PDF版}](/doc/BPI-Bit-Webduino超快速上手指南.pdf)
+
 ## 目录导读
 
 1. [`doc`](/doc)存放BPI:bit板的原理图以及ESP-WROOM-32、WS2812、MPU9250等各个部分的datesheet
