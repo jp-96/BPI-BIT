@@ -53,10 +53,10 @@
   <tr><td>P11</td><td>ADC2_CH7</td><td></td><td>GPIO27</td><td></td><td></td></tr>
   <tr><td>P12</td><td>ADC2_CH2</td><td></td><td>GPIO02</td><td></td><td></td></tr>
   <tr><td>P2</td><td>ADC1_CH5</td><td></td><td>GPIO33</td><td></td><td></td></tr>
-  <tr><td>P13</td><td></td><td></td><td>GPIO18</td><td>SPI_SS</td><td></td></tr>
-  <tr><td>P14</td><td></td><td></td><td>GPIO19</td><td>SPI_SCK</td><td></td></tr>
-  <tr><td>P15</td><td></td><td></td><td>GPIO23</td><td>SPI_MISO</td><td></td></tr>
-  <tr><td>P16</td><td></td><td></td><td>GPIO05</td><td>SPI_MOSI</td><td></td></tr>
+  <tr><td>P13</td><td></td><td></td><td>GPIO18</td><td>SPI_SCK</td><td></td></tr>
+  <tr><td>P14</td><td></td><td></td><td>GPIO19</td><td>SPI_MISO</td><td></td></tr>
+  <tr><td>P15</td><td></td><td></td><td>GPIO23</td><td>SPI_MOSI</td><td></td></tr>
+  <tr><td>P16</td><td></td><td></td><td>GPIO05</td><td>SPI_SS</td><td></td></tr>
   <tr><td>3V3</td><td></td><td></td><td></td><td></td><td>POWER:3V3</td></tr>
   <tr><td>3V3</td><td></td><td></td><td></td><td></td><td>POWER:3V3</td></tr>
   <tr><td>3V3</td><td></td><td></td><td></td><td></td><td>POWER:3V3</td></tr>
