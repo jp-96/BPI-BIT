@@ -55,8 +55,8 @@ int fadeAmount = 5;
 #define LEDC_BASE_FREQ 450
 
 //buttom config
-#define BottomA 35
-#define BottomB 27
+#define BottonA 35
+#define BottonB 27
 
 /******************************************
 **Function name    : ledcAnalogWrite     **
